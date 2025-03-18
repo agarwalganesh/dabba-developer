@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <!-- Bootstrap and Icons via CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    
     <style type="text/css">
         header a {
             color: blue;
@@ -18,28 +20,17 @@
         body {
             background: linear-gradient(50deg, red, yellow, pink, green);
             background-size: 400% 400%;
-            animation: moveBg 15s infinite linear;
+            animation: moveBg 7s infinite linear;
         }
 
         /* Animation for moving background */
         @keyframes moveBg {
-            0% {
-                background-position: 0% 50%;
-            }
-            25% {
-                background-position: 50% 100%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            75% {
-                background-position: 50% 0%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
+            0% { background-position: 0% 50%; }
+            25% { background-position: 50% 100%; }
+            50% { background-position: 100% 50%; }
+            75% { background-position: 50% 0%; }
+            100% { background-position: 0% 50%; }
         }
-
 
         details li, details p {
             margin-left: 50px;
@@ -66,17 +57,17 @@
 </head>
 
 <body class="container-fluid">
-    <!-- header -->
+    <!-- Header -->
     <header class="bg-black text-white text-center p-2 m-2">
         <h1>Book Showcase : Book 2 Details</h1>
         <a href="index.html" class="justify-content-end d-flex fs-3">Home</a>
     </header>
 
-    <!-- main -->
+    <!-- Main Content -->
     <main class="container-fluid bg-white text-dark p-5 w-75 border rounded-3 overflow-auto" style="box-shadow: 4px 5px 5px black;">
         <p class="text-start fs-3 fw-bold">Book Title: 50 Revolutionary Inventions</p>
         <div class="justify-content-start d-flex">
-            <img src="../public/images/book2.png" alt="book1" class="img-fluid" style="width: 200px;">
+            <img src="./public/images/book2.png" alt="book2" class="img-fluid" style="width: 200px;">
         </div>
 
         <!-- Genre -->
@@ -150,29 +141,30 @@
         <!-- Purchase Links -->
         <details>
             <summary class="fs-5">Purchase Link</summary>
-            <a href="https://www.amazon.com/..." class="fs-4">Amazon</a><br>
-            <a href="https://www.flipkart.com/..." class="fs-4">Flipkart</a>
+            <a href="https://www.amazon.com/" class="fs-4">Amazon</a><br>
+            <a href="https://www.flipkart.com/" class="fs-4">Flipkart</a>
         </details>
 
         <!-- Feedback Form -->
         <h3>Feedback Form</h3>
         <div class="d-flex justify-content-center">
             <form class="border p-4 border-4 rounded-5 w-50">
-                <div class="form-group m-2">
+                <div class="form-group m-2 overflow-auto">
                     <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" name="name" required>
+                    <input type="text" class="form-control" id="name" required name="name">
                 </div>
-                <div class="form-group m-2">
+                <div class="form-group m-2 overflow-auto">
                     <label for="feedback">Feedback</label>
-                    <textarea name="feedback" id="feedback" class="form-control" required></textarea>
+                    <textarea name="feedback" id="feedback" required class="form-control"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary m-2 w-100">Submit Feedback</button>
+                <button type="submit" class="btn btn-primary m-2 w-100 overflow-auto">Submit Feedback</button>
             </form>
         </div>
     </main>
 
+    <!-- Footer -->
     <footer class="bg-black text-white m-3 p-2 d-flex justify-content-center">
-        <span class="bi bi-c-circle">2025 Book Showcase | All Rights Reserved</span>
+        <span class="bi bi-c-circle"> 2025 Book Showcase | All Rights Reserved</span>
     </footer>
 </body>
 </html>

@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Book Showcase</title>
 
-    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    
     <style>
         header a {
             color: blue;
@@ -21,25 +23,13 @@
             animation: moveBg 15s infinite linear;
         }
 
-        /* Animation for moving background */
         @keyframes moveBg {
-            0% {
-                background-position: 0% 50%;
-            }
-            25% {
-                background-position: 50% 100%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            75% {
-                background-position: 50% 0%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
+            0% { background-position: 0% 50%; }
+            25% { background-position: 50% 100%; }
+            50% { background-position: 100% 50%; }
+            75% { background-position: 50% 0%; }
+            100% { background-position: 0% 50%; }
         }
-
 
         details li, details p {
             margin-left: 50px;
@@ -51,15 +41,9 @@
                 background: linear-gradient(50deg, blue, cyan, purple, pink);
                 animation: none;
             }
-            main {
+            main, img, form {
                 width: 100% !important;
                 padding: 20px !important;
-            }
-            img {
-                width: 100% !important;
-            }
-            form {
-                width: 100% !important;
             }
         }
     </style>
@@ -88,178 +72,57 @@
             <li>Applied Sciences</li>
         </details>
 
-
-          <!-- index pages -->
-
-
-          <details>
-            <summary class="fs-5">Index pages</summary>
-            <!-- 1 -->
-            <details class="ms-5">
-                <summary>Introduction to Manufacturing</summary>
-                <li>Importance of Manufacturing</li>
-                <li>Materials in Manufacturing</li>
-                <li>Manufacturing Processes Overview</li>
-            </details>
-            <!-- 2 -->
-            <details class="ms-5">
-                <summary>Properties of Materials</summary>
-                <li>Physical Properties
-                </li>
-                <li>Mechanical Properties
-                </li>
-                <li>Testing of Materials
-                </li>
-            </details>
-            <!-- 3 -->
-            <details class="ms-5">
-                <summary>Metal Casting Processes</summary>
-                <li>Casting Fundamentals</li>
-                <li>Types of Casting Methods</li>
-                <li>Defects in Casting</li>
-            </details>
-            <!-- 4 -->
-            <details class="ms-5">
-                <summary>Forming and Shaping Processes
-
-                </summary>
-                <li>Rolling, Forging, Extrusion</li>
-                <li>Sheet Metal Forming</li>
-                <li>Drawing Processes</li>
-            </details>
-
-            <!-- 5 -->
-            <details class="ms-5">
-                <summary>Machining Processes
-
-                </summary>
-                <li>Turning, Milling, Drilling</li>
-                <li>Grinding and Finishing Operations</li>
-                <li>Cutting Tool Materials
-                </li>
-            </details>
-
-            <!-- 6 -->
-            <details class="ms-5">
-                <summary>
-                    Joining and Assembly
-                </summary>
-                <li>Welding, Brazing, Soldering
-                </li>
-                <li>Adhesive Bonding
-                </li>
-                <li>Mechanical Fasteners
-                </li>
-            </details>
-            <!-- 7 -->
-            <details class="ms-5">
-                <summary>
-                    Advanced Manufacturing Processes
-                </summary>
-                <li>Additive Manufacturing (3D Printing)
-                </li>
-                <li>Microfabrication
-                </li>
-                <li>Non-Traditional Machining (EDM, Water Jet, Laser Machining)
-                </li>
-            </details>
-            <!-- 8 -->
-            <details class="ms-5">
-                <summary>Automation and Quality Control
-                </summary>
-                <li>
-                    CNC Machines and Robotics
-                </li>
-                <li>Statistical Process Control (SPC)
-                </li>
-                <li>Lean Manufacturing
-
-                </li>
-            </details>
-            <!-- 9 -->
-            <details class="ms-5">
-                <summary>Manufacturing Systems and Design
-                </summary>
-                <li>Flexible Manufacturing Systems
-                </li>
-                <li>Design for Manufacturing and Assembly (DFMA)
-                </li>
-                <li>Sustainable and Green Manufacturing
-                </li>
-            </details>
-
-
+        <!-- Index Pages -->
+        <details>
+            <summary class="fs-5">Index pages (Detailed Summary)</summary>
+            <p>This book provides an extensive understanding of manufacturing processes, material properties, machining techniques, and modern automation methods. Below is a detailed chapter summary:</p>
+            <ul>
+                <li><strong>Introduction to Manufacturing:</strong> Importance, materials, and process overview.</li>
+                <li><strong>Properties of Materials:</strong> Physical, mechanical properties, and testing methods.</li>
+                <li><strong>Metal Casting Processes:</strong> Fundamentals, methods, and defect analysis.</li>
+                <li><strong>Forming and Shaping Processes:</strong> Rolling, forging, sheet metal forming, and drawing.</li>
+                <li><strong>Machining Processes:</strong> Milling, turning, drilling, grinding, and cutting tools.</li>
+                <li><strong>Joining and Assembly:</strong> Welding, brazing, adhesive bonding, and fasteners.</li>
+                <li><strong>Advanced Manufacturing:</strong> 3D printing, microfabrication, and non-traditional machining.</li>
+                <li><strong>Automation and Quality Control:</strong> CNC, robotics, lean manufacturing, and SPC.</li>
+                <li><strong>Manufacturing Systems and Design:</strong> Flexible systems, DFMA, and sustainable manufacturing.</li>
+            </ul>
         </details>
 
-
-
-
-
-
-        <!-- author -->
+        <!-- Authors -->
         <details>
             <summary class="fs-5">Authors</summary>
             <li>Serope Kalpakjian</li>
             <li>Steven R. Schmid</li>
         </details>
 
-
-
-
-        <!-- overview -->
+        <!-- Overview -->
         <details>
             <summary class="fs-5">Overview</summary>
-            <p class="fs-6">This book is a comprehensive guide to the principles, processes, and applications of modern
-                manufacturing technology. It is widely used as a textbook in mechanical, industrial, and manufacturing
-                engineering courses. The book covers both the fundamental and advanced aspects of manufacturing, making
-                it an essential resource for students, engineers, and professionals in the field.
-
-            </p>
+            <p class="fs-6">This book is a comprehensive guide to modern manufacturing technology. It is widely used in engineering courses and covers fundamental and advanced concepts essential for students and professionals.</p>
         </details>
 
-        <!-- exam point -->
+        <!-- Competitive Exam Relevance -->
         <details>
-            <summary class="fs-5">Competative Exam Relerance</summary>
-            <li>
-                GATE (Graduate Aptitude Test in Engineering) – ME & PI
-            </li>
-            <li>
-                IES (Indian Engineering Services) – Mechanical & Production Engineering </li>
-            <li>
-                SSC JE (Staff Selection Commission – Junior Engineer)
-            </li>
-            <li>
-                PSU Exams (BHEL, ISRO, DRDO, ONGC, SAIL, GAIL, NTPC, etc.)
-            </li>
-            <li>
-                State Engineering Exams (RPSC AE, UPPSC AE, MPSC AE, etc.)
-            </li>
-            <li>
-                ESE (Engineering Services Examination) – Mechanical & Manufacturing </li>
-            <li>
-                BARC (Bhabha Atomic Research Centre) Engineer Exam
-            </li>
-            <li>
-                ISRO & DRDO Scientist/Engineer Exams
-            </li>
-            <li>
-                RRB JE (Railway Recruitment Board – Junior Engineer)
-            </li>
-
+            <summary class="fs-5">Competitive Exam Relevance</summary>
+            <p>This book is beneficial for various engineering exams:</p>
+            <li>GATE (ME & PI)</li>
+            <li>IES (Mechanical & Production Engineering)</li>
+            <li>SSC JE</li>
+            <li>PSU Exams (BHEL, ISRO, DRDO, ONGC, etc.)</li>
+            <li>State Engineering Exams (RPSC AE, UPPSC AE, etc.)</li>
+            <li>ESE (Engineering Services Examination)</li>
+            <li>BARC, ISRO & DRDO Scientist/Engineer Exams</li>
+            <li>RRB JE</li>
         </details>
 
-
-        <!-- PURCHASE LINKS -->
-
+        <!-- Purchase Links -->
         <details>
-            <summary class="fs-5">Purchase Link</summary>
-            <a href="https://www.amazon.in/Manufacturing-Engineering-Technology-4e-Kalpakjian/dp/8177581708"
-                class="fs-4">Amazon</a>
+            <summary class="fs-5">Purchase Links</summary>
+            <a href="https://www.amazon.in/Manufacturing-Engineering-Technology-4e-Kalpakjian/dp/8177581708" class="fs-4">Amazon</a>
             <br>
-            <a href="https://www.flipkart.com/manufacturing-engineering-technology-4th/p/itme8utsqzaawgxd?pid=9788177581706&cmpid=product.share.pp&_refId=PP.b2da4a4e-9e0e-4fae-b1ea-1c69aeb7e718.9788177581706&lid=LSTBOK9788177581706ECMHLN"
-                class="fs-4">Flipkart</a>
+            <a href="https://www.flipkart.com/manufacturing-engineering-technology-4th/p/itme8utsqzaawgxd" class="fs-4">Flipkart</a>
         </details>
-        `
 
         <!-- Feedback Form -->
         <h3>Feedback Form</h3>
@@ -279,7 +142,7 @@
     </main>
 
     <footer class="bg-black text-white m-3 p-2 d-flex justify-content-center">
-        <span class="bi bi-c-circle">2025 Book Showcase | All Rights Reserved</span>
+        <span class="bi bi-c-circle"> 2025 Book Showcase | All Rights Reserved</span>
     </footer>
 </body>
 </html>
