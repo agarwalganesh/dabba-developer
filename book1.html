@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        header a {
+            color: blue;
+            padding-right: 20px;
+            background-color: rgb(59, 63, 63);
+        }
+        
+        body {
+            background: linear-gradient(50deg, red, yellow, pink, green);
+            background-size: 400% 400%;
+            animation: moveBg 15s infinite linear;
+        }
+
+        /* Animation for moving background */
+        @keyframes moveBg {
+            0% {
+                background-position: 0% 50%;
+            }
+            25% {
+                background-position: 50% 100%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            75% {
+                background-position: 50% 0%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+
+        details li, details p {
+            margin-left: 50px;
+            color: blue;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                background: linear-gradient(50deg, blue, cyan, purple, pink);
+                animation: none;
+            }
+            main {
+                width: 100% !important;
+                padding: 20px !important;
+            }
+            img {
+                width: 100% !important;
+            }
+            form {
+                width: 100% !important;
+            }
+        }
+    </style>
+</head>
+
+<body class="container-fluid">
+    <header class="bg-black text-white text-center p-2 m-2">
+        <h1>Book Showcase : Book 1 Details</h1>
+        <a href="index.html" class="justify-content-end d-flex fs-3">Home</a>
+    </header>
+
+    <main class="container-fluid bg-white text-dark p-5 w-75 border rounded-3 overflow-auto"
+        style="box-shadow: 4px 5px 5px black;">
+        <p class="text-start fw-bold fs-3">Book Title: Manufacturing Engineering and Technology</p>
+        <div class="justify-content-start d-flex">
+            <img src="../public/images/book1.png" alt="book1" class="img-fluid" style="width: 200px;">
+        </div>
+
+        <!-- Genre -->
+        <details>
+            <summary class="fs-5">Genre</summary>
+            <li>Manufacturing Engineering</li>
+            <li>Mechanical Engineering</li>
+            <li>Industrial Engineering</li>
+            <li>Technical Education</li>
+            <li>Applied Sciences</li>
+        </details>
+
+
+          <!-- index pages -->
+
+
+          <details>
+            <summary class="fs-5">Index pages</summary>
+            <!-- 1 -->
+            <details class="ms-5">
+                <summary>Introduction to Manufacturing</summary>
+                <li>Importance of Manufacturing</li>
+                <li>Materials in Manufacturing</li>
+                <li>Manufacturing Processes Overview</li>
+            </details>
+            <!-- 2 -->
+            <details class="ms-5">
+                <summary>Properties of Materials</summary>
+                <li>Physical Properties
+                </li>
+                <li>Mechanical Properties
+                </li>
+                <li>Testing of Materials
+                </li>
+            </details>
+            <!-- 3 -->
+            <details class="ms-5">
+                <summary>Metal Casting Processes</summary>
+                <li>Casting Fundamentals</li>
+                <li>Types of Casting Methods</li>
+                <li>Defects in Casting</li>
+            </details>
+            <!-- 4 -->
+            <details class="ms-5">
+                <summary>Forming and Shaping Processes
+
+                </summary>
+                <li>Rolling, Forging, Extrusion</li>
+                <li>Sheet Metal Forming</li>
+                <li>Drawing Processes</li>
+            </details>
+
+            <!-- 5 -->
+            <details class="ms-5">
+                <summary>Machining Processes
+
+                </summary>
+                <li>Turning, Milling, Drilling</li>
+                <li>Grinding and Finishing Operations</li>
+                <li>Cutting Tool Materials
+                </li>
+            </details>
+
+            <!-- 6 -->
+            <details class="ms-5">
+                <summary>
+                    Joining and Assembly
+                </summary>
+                <li>Welding, Brazing, Soldering
+                </li>
+                <li>Adhesive Bonding
+                </li>
+                <li>Mechanical Fasteners
+                </li>
+            </details>
+            <!-- 7 -->
+            <details class="ms-5">
+                <summary>
+                    Advanced Manufacturing Processes
+                </summary>
+                <li>Additive Manufacturing (3D Printing)
+                </li>
+                <li>Microfabrication
+                </li>
+                <li>Non-Traditional Machining (EDM, Water Jet, Laser Machining)
+                </li>
+            </details>
+            <!-- 8 -->
+            <details class="ms-5">
+                <summary>Automation and Quality Control
+                </summary>
+                <li>
+                    CNC Machines and Robotics
+                </li>
+                <li>Statistical Process Control (SPC)
+                </li>
+                <li>Lean Manufacturing
+
+                </li>
+            </details>
+            <!-- 9 -->
+            <details class="ms-5">
+                <summary>Manufacturing Systems and Design
+                </summary>
+                <li>Flexible Manufacturing Systems
+                </li>
+                <li>Design for Manufacturing and Assembly (DFMA)
+                </li>
+                <li>Sustainable and Green Manufacturing
+                </li>
+            </details>
+
+
+        </details>
+
+
+
+
+
+
+        <!-- author -->
+        <details>
+            <summary class="fs-5">Authors</summary>
+            <li>Serope Kalpakjian</li>
+            <li>Steven R. Schmid</li>
+        </details>
+
+
+
+
+        <!-- overview -->
+        <details>
+            <summary class="fs-5">Overview</summary>
+            <p class="fs-6">This book is a comprehensive guide to the principles, processes, and applications of modern
+                manufacturing technology. It is widely used as a textbook in mechanical, industrial, and manufacturing
+                engineering courses. The book covers both the fundamental and advanced aspects of manufacturing, making
+                it an essential resource for students, engineers, and professionals in the field.
+
+            </p>
+        </details>
+
+        <!-- exam point -->
+        <details>
+            <summary class="fs-5">Competative Exam Relerance</summary>
+            <li>
+                GATE (Graduate Aptitude Test in Engineering) – ME & PI
+            </li>
+            <li>
+                IES (Indian Engineering Services) – Mechanical & Production Engineering </li>
+            <li>
+                SSC JE (Staff Selection Commission – Junior Engineer)
+            </li>
+            <li>
+                PSU Exams (BHEL, ISRO, DRDO, ONGC, SAIL, GAIL, NTPC, etc.)
+            </li>
+            <li>
+                State Engineering Exams (RPSC AE, UPPSC AE, MPSC AE, etc.)
+            </li>
+            <li>
+                ESE (Engineering Services Examination) – Mechanical & Manufacturing </li>
+            <li>
+                BARC (Bhabha Atomic Research Centre) Engineer Exam
+            </li>
+            <li>
+                ISRO & DRDO Scientist/Engineer Exams
+            </li>
+            <li>
+                RRB JE (Railway Recruitment Board – Junior Engineer)
+            </li>
+
+        </details>
+
+
+        <!-- PURCHASE LINKS -->
+
+        <details>
+            <summary class="fs-5">Purchase Link</summary>
+            <a href="https://www.amazon.in/Manufacturing-Engineering-Technology-4e-Kalpakjian/dp/8177581708"
+                class="fs-4">Amazon</a>
+            <br>
+            <a href="https://www.flipkart.com/manufacturing-engineering-technology-4th/p/itme8utsqzaawgxd?pid=9788177581706&cmpid=product.share.pp&_refId=PP.b2da4a4e-9e0e-4fae-b1ea-1c69aeb7e718.9788177581706&lid=LSTBOK9788177581706ECMHLN"
+                class="fs-4">Flipkart</a>
+        </details>
+        `
+
+        <!-- Feedback Form -->
+        <h3>Feedback Form</h3>
+        <div class="d-flex justify-content-center">
+            <form class="border p-4 border-4 rounded-5 w-50">
+                <div class="form-group m-2 overflow-auto">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" required name="name">
+                </div>
+                <div class="form-group m-2 overflow-auto">
+                    <label for="feedback">Feedback</label>
+                    <textarea name="feedback" id="feedback" required class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary m-2 w-100 overflow-auto">Submit Feedback</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="bg-black text-white m-3 p-2 d-flex justify-content-center">
+        <span class="bi bi-c-circle">2025 Book Showcase | All Rights Reserved</span>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style type="text/css">
+        header a {
+            color: blue;
+            padding-right: 20px;
+            background-color: rgb(59, 63, 63);
+        }
+        
+        body {
+            background: linear-gradient(50deg, red, yellow, pink, green);
+            background-size: 400% 400%;
+            animation: moveBg 15s infinite linear;
+        }
+
+        /* Animation for moving background */
+        @keyframes moveBg {
+            0% {
+                background-position: 0% 50%;
+            }
+            25% {
+                background-position: 50% 100%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            75% {
+                background-position: 50% 0%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        details li {
+            margin-left: 50px;
+            color: blue;
+            padding: 30px;
+        }
+
+        details p {
+            margin-left: 50px;
+            color: blue;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                background: linear-gradient(50deg, blue, cyan, purple, pink);
+                animation: none;
+            }
+            main {
+                width: 100% !important;
+                padding: 20px !important;
+            }
+            img {
+                width: 100% !important;
+            }
+            form {
+                width: 100% !important;
+            }
+        }
+    </style>
+</head>
+
+<body class="container-fluid">
+
+    <!-- header -->
+    <header class="bg-black text-white text-center p-2 m-2">
+        <h1>Book Showcase : Book 3 Details</h1>
+        <a href="index.html" class="justify-content-end d-flex fs-3">Home</a>
+    </header>
+
+    <!-- main -->
+    <main class="container-fluid bg-white text-dark p-5 w-75 border rounded-3 overflow-auto" style="box-shadow: 4px 5px 5px black;">
+
+        <p class="text-start fs-3 fw-bold">Attitude is Everything</p>
+
+        <div class="justify-content-start d-flex">
+            <img src="public/images/book3att.png" alt="book1" class="img-fluid" style="width: 200px;">
+        </div>
+
+        <!-- Genre -->
+        <details>
+            <summary class="fs-5">Genre</summary>
+            <ol>
+                <li class="ms-5 text-primary">Personal Development</li>
+                <li class="ms-5 text-primary">Motivational</li>
+                <li class="ms-5 text-primary">Success & Leadership</li>
+                <li class="ms-5 text-primary">Psychology</li>
+                <li class="ms-5 text-primary">Inspirational</li>
+            </ol>
+        </details>
+
+        <!-- index pages -->
+        <details>
+            <summary class="fs-5">Index pages</summary>
+            <ol>
+                <li>Your Attitude is Your Window to the World</li>
+                <li>You’re a Human Magnet</li>
+                <li>Picture Your Way to Success</li>
+                <li>Make a Commitment and You’ll Move Mountains</li>
+                <li>Your Words Blaze a Trail</li>
+                <li>How Are You?</li>
+                <li>Stop Complaining!</li>
+                <li>Associate with Positive People</li>
+                <li>Turn Your Problems into Opportunities</li>
+                <li>Get Out There and Fail</li>
+                <li>Networking That Gets Results</li>
+                <li>Never, Never, Never Give Up</li>
+            </ol>
+        </details>
+
+        <!-- author -->
+        <details>
+            <summary class="fs-5">Authors</summary>
+            <li class="ms-5">Jeff Keller</li>
+        </details>
+
+        <!-- overview -->
+        <details>
+            <summary class="fs-5">Overview</summary>
+            <p>Attitude is Everything is a self-help and motivational book that emphasizes the power of a positive mindset in achieving success. Jeff Keller, a former lawyer turned motivational speaker, shares his personal journey of transformation and provides practical lessons on how changing one's attitude can lead to significant life improvements.</p>
+        </details>
+
+        <!-- relevance -->
+        <details>
+            <summary class="fs-5">Relevance/Importance</summary>
+            <li>Mindset Shift for Success</li>
+            <li>Overcoming Negativity and Fear</li>
+            <li>Importance of Words and Actions</li>
+            <li>Motivation for Students and Professionals</li>
+            <li>Timeless Principles</li>
+        </details>
+
+        <!-- PURCHASE LINKS -->
+        <details>
+            <summary class="fs-5">Purchase Link</summary>
+            <a href="https://www.amazon.in/gp/aw/d/9351772071/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=20df50a687c567ca681d9b5ce567f9ea&hsa_cr_id=7634494740502&qid=1742231408&sr=1-1-e0fa1fdd-d857-4087-adda-5bd576b25987&ref_=sbx_be_s_sparkle_lsi4d_asin_0_img&pd_rd_w=yeSCr&content-id=amzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d%3Aamzn1.sym.df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_p=df9fe057-524b-4172-ac34-9a1b3c4e647d&pf_rd_r=GNMH977357SM0EA8FASK&pd_rd_wg=Eckid&pd_rd_r=af3b6251-265f-4127-a895-4c06d0430bda" class="fs-4">Amazon</a>
+            <br>
+            <a  href="https://www.flipkart.com/attitude-is-everything/p/itma665b22aa223e?pid=RBKHAANAD5BMH2XV&lid=LSTRBKHAANAD5BMH2XVG8MMWH&marketplace=FLIPKART&q=attitude+is+everything&store=bks&srno=s_1_8&otracker=AS_QueryStore_OrganicAutoSuggest_1_8_sc_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_8_sc_na_na&fm=organic&iid=d1679cec-71d2-479f-ba6d-1bd9adf1c1ab.RBKHAANAD5BMH2XV.SEARCH&ppt=hp&ppn=homepage&ssid=4a31oqxue80000001742231530255&qH=0e001ce90989f3fe" class="fs-4">Flipkart</a>
+        </details>
+
+        <!-- feedback form -->
+        <h3>Feedback Form</h3>
+        <div class="d-flex justify-content-center">
+            <form class="border p-4 border-4 rounded-5 w-50 feedback-form">
+                <div class="form-group m-2">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" required id="name" name="name">
+                </div>
+                <div class="form-group m-2">
+                    <label for="feedback">Feedback</label>
+                    <textarea name="feedback" id="feedback" required class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary m-2 w-100">Submit Feedback</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="bg-black text-white m-3 p-2 d-flex justify-content-center">
+        <span class="bi bi-c-circle">2025 Book Showcase | All Rights Reserved</span>
+    </footer>
+
+</html>

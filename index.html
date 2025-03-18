@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web project</title>
+    <meta name="description" content="Discover an amazing collection of books. Flip to explore front and back covers.">
+    <meta name="keywords" content="books, book showcase, explore books, literature">
+    <meta name="author" content="Your Name">
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+    <!-- Bootstrap JavaScript Bundle (includes Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        /* Full page setup */
+        body {
+            background: linear-gradient(50deg, red, yellow, pink, green);
+            background-size: 400% 400%;
+            animation: moveBg 15s infinite linear;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Animation for moving background */
+        @keyframes moveBg {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            25% {
+                background-position: 50% 100%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            75% {
+                background-position: 50% 0%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container-fluid {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            flex-grow: 1;
+        }
+
+        header,
+        footer {
+            background-color: rgb(51, 51, 51);
+            padding: 0.5%;
+            color: white;
+            text-align: center;
+            width: 100%;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 1%;
+        }
+
+        .fixed-img {
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        /* Flip effect styles */
+        .flip-box {
+            position: relative;
+            width: 200px;
+            height: 300px;
+            overflow: hidden;
+            transition: transform 2s ease-in-out;
+        }
+
+        .flip-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+        }
+
+        .flip-box .back {
+            opacity: 0;
+            transform: rotateY(180deg);
+        }
+
+        .flip-box:hover .front {
+            opacity: 0;
+            transform: rotateY(180deg);
+        }
+
+        .flip-box:hover .back {
+            opacity: 1;
+            text-align: center;
+            display: flex;
+            transform: rotateY(0deg);
+        }
+
+        .images {
+            display: flex;
+            gap: 5%;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            perspective: 1000px;
+        }
+
+        /* Mobile Responsive Design */
+        @media (max-width: 768px) {
+            .images {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .flip-box {
+                width: 150px;
+                height: 225px;
+            }
+
+            .fixed-img {
+                width: 150px;
+                height: 225px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="container-fluid">
+    <header>
+        <h1>Welcome to Book Showcase</h1>
+    </header>
+
+    <nav class="bg-black">
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active text-white" href="index.html">Home</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section>
+            <h2 class="m-3 text-center">Explore Books</h2>
+            <div class="images">
+
+                <article class="flip-box">
+                    <figure>
+                        <img src="public/images/book1.png" alt="Book 1 Cover" class="img-fluid fixed-img front">
+                        <a href="book1.html">
+                            <img  alt="Click here to view details"
+                                class="img-fluid fixed-img back">
+                        </a>
+                    </figure>
+                </article>
+
+                <article class="flip-box">
+                    <figure>
+                        <img src="public/images/book2.png" alt="Book 2 Cover" class="img-fluid fixed-img front">
+                        <a href="book2.html">
+                            <img  alt="Click here to view details"
+                                class="img-fluid fixed-img back">
+                        </a>
+                    </figure>
+                </article>
+
+                <article class="flip-box">
+                    <figure>
+                        <img src="public/images/book3att.png" alt="Book 3 Cover" class="img-fluid fixed-img front">
+                        <a href="book3.html">
+                            <img alt="Click here to view details"
+                                class="img-fluid fixed-img back">
+                        </a>
+                    </figure>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Book Showcase | All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>

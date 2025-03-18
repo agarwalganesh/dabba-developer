@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/ganes/AppData/Local/Temp/ef7842bb-cdaf-4ddf-bf66-03152d21ee22_arraybasics.c.zip.arraybasics.c.zip",
+      "program": "c:/Users/ganes/AppData/Local/Temp/ef7842bb-cdaf-4ddf-bf66-03152d21ee22_arraybasics.c.zip.arraybasics.c.zip/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
